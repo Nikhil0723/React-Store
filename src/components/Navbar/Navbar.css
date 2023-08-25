@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lugrasimo&family=Roboto+Mono:wght@300;400&display=swap');
+
+header{
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+}
+.navbar{
+    width: 100vw;
+    padding: 0 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo-txt{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -1px;
+    word-spacing: -3px;
+}
+.brand-name{
+    font-family: 'Lugrasimo', cursive;
+    font-weight: 900;
+    margin-right: 10px;
+}
+.right-container{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu .menu-item{
+    list-style: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+.menu-item a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s all ease;
+}
+.menu-item:hover a{
+    color: #4353ff;
+}
+
+.menu-btn{
+    height: 15px;
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn span{
+    display: block;
+    height: 2px ;
+    background: black;
+    width: 100%;
+}
+.cart-btn{
+    display: flex;
+    background-color: #4353ff;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 15px 18px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.cart-item-num{
+    display: block;
+    height: 20px;
+    width: 20px;  
+    margin-left:7px ;
+    background-color: white;
+    border-radius: 100%;
+    color: #4353ff;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 960px) {
+  .navbar{
+    padding: 0 25px;
+    height: 90px;
+  }
+  .nav{
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0 10px;
+    background-color: rgb(204, 203, 203);
+    height: 60px;
+    width: 100vw;
+    align-items: center;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  .menu-item a{
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .menu-btn{
+    display: flex;
+  }
+  .navbar-toggle{
+    top: 88px;
+  }
+
+  }
+
+  @media only screen and (max-width: 550px) {
+  
+  .navbar{
+    height: 70px;
+   padding: 0 15px;  
+  }
+  .brand-name{
+    font-size: 16px;
+  }
+  .logo-txt{
+    font-size: 16px;
+  }
+  .navbar-toggle{
+    top: 68px;
+  }
+
+    }
+
+.cart{
+  position: fixed;
+  top: 0;
+  right: -475px;
+  height: 100vh;
+  width:475px;
+  background: rgb(241, 241, 241);
+  transition: all ease 0.3s;
+  opacity: 0;
+  z-index: 999;
+}
+.cart-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 25px;
+  font-size: 10px;
+  font-weight: 400;
+  border-bottom: 0.5px solid rgb(213, 213, 213);
+}
+.cart-header .close-cart{
+  cursor: pointer;
+}
+
+.cart-items{
+  height: 72%;
+  overflow-y: scroll;
+}
+.cart-items::-webkit-scrollbar {
+  display: none;
+}
+
+.cart-checkout-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 25px;
+  gap: 30px;
+  border-top: 0.5px solid rgb(213, 213, 213);
+}
+.subtotal{
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-btn{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: #4353ff;
+  color: white;
+}
+.checkout-btn:hover{
+   background-color : #3243fe;
+}
+
+.cart-toggle{
+  right: 0;
+  opacity: 1;
+}

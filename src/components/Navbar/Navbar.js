@@ -68,6 +68,11 @@ const onclickCart=()=>{
        </div>
        <div className="cart-items">
        <Cartitem/>
+       <Cartitem/>
+       <Cartitem/>
+       <Cartitem/>
+       <Cartitem/>
+       <Cartitem/>
        </div>
      <div className="cart-checkout-section">
      <div className='subtotal'>

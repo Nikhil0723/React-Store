@@ -11,10 +11,14 @@ const Cartitem = () => {
         <div className="product-info">
            <h1 className='product-name'>Lorem ipsum dolor sit amet.</h1>
            <span className='product-size'>Size: <span>S</span></span>
-           <span className='remove'>REMOVE</span>
+           <a className='remove-product'>REMOVE</a>
         </div>
         <div className="detail">
-             
+             <h1 className='product-price'>$25</h1>
+             <div className="quantity">
+              <span>Qty</span>
+              <input type="text" />
+             </div>
         </div>
       </div>
     </div>

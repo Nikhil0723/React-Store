@@ -1,0 +1,16 @@
+
+.product-page{
+    margin-top: 220px;
+    padding: 0 35px;  
+    align-items: center;
+}
+.categories{
+    font-size: 30px;
+}
+
+.product-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
